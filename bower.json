@@ -1,0 +1,24 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "authors": [
+    "May Velous <mayvelous@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-bootstrap": "~0.13.4",
+    "bootstrap": "~3.3.5",
+    "satellizer": "~0.12.5",
+    "angular-ui-router": "~0.2.15",
+    "angular-toastr": "~1.5.0",
+    "angular-animate": "~1.4.7"
+  }
+}

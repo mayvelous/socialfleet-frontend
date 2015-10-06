@@ -1,0 +1,22 @@
+<div class="col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2">
+<div class="well clearfix">
+    <div class="form-group">
+        <textarea rows="4" class="form-control" ng-model="message" placeholder="tweet message"></textarea>
+    </div>
+    <p class="input-group">
+        <input class="form-control" ng-model="date" datepicker-popup is-open="opened" min-date="minDate" />
+            <span class="input-group-btn">
+                <button class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+    </p>
+    <div class="row">
+        <div class="col-xs-8">
+            <timepicker ng-model="time"></timepicker>
+        </div>
+        <div class="col-xs-4" style="padding-top: 45px;">
+            <button class="btn btn-danger" ng-show="isEditing" ng-click="delete()">Delete</button>
+            <button class="btn btn-default pull-right" ng-disabled="!date" ng-click="save()">Save</button>
+        </div>
+    </div>
+</div>
+    </div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Social fleet</title>
+
+    <!-- vendorInject:css -->
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+<body ng-controller="Login">
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <button ng-show="isAuthenticated()" class="btn btn-primary navbar-btn" ui-sref="post">New Post</button>
+        <button ng-show="isAuthenticated()" class="btn btn-link navbar-btn" ui-sref="posts">My Posts</button>
+        <button ng-hide="isAuthenticated()" class="btn btn-link navbar-btn pull-right" ng-click="login()">Login</button>
+        <button ng-show="isAuthenticated()" class="btn btn-link navbar-btn pull-right" ng-click="logout()">Logout</button>
+    </div>
+</nav>
+
+<div class="container">
+
+        <div ng-if="isAuthenticated()" ui-view></div>
+
+</div>
+
+<!-- vendorInject:js -->
+<!-- endinject -->
+
+<!-- inject:js -->
+<!-- endinject -->
+
+</body>
+</html>
